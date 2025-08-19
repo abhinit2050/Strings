@@ -36,7 +36,13 @@ var isAnagram = function(s, t) {
     
 };
 
-let s = "car";
-let t = "rat"
+//one liner approach
+// var isAnagram = function(s,t){
+
+//     return s.split("").sort().join("") === t.split("").sort().join("")
+// }
+
+let s = "anagram";
+let t = "naagram"
 
 console.log(isAnagram(s,t));
