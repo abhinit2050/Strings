@@ -8,20 +8,19 @@ var isAnagram = function(s, t) {
     let tObj={}
 
 
-    for(let i=0; i<s.length;i++){
+    for(let i=0, j=0; i<s.length;i++){
         if(!(sObj.hasOwnProperty(s[i]))){
             sObj[s[i]] = 1
         } else {
             sObj[s[i]]++
         }
-    }
 
-    for(let j=0; j<t.length;j++){
-        if(!(tObj.hasOwnProperty(t[j]))){
-            tObj[t[j]] = 1
+        if(!(tObj.hasOwnProperty(t[i]))){
+            tObj[t[i]] = 1
         } else {
-            tObj[t[j]]++
+            tObj[t[i]]++
         }
+
     }
 
 
